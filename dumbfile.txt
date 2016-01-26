@@ -2,3 +2,12 @@ git filter-branch -f --env-filter "GIT_AUTHOR_NAME='brian gerson';
 GIT_AUTHOR_EMAIL='brianpgerson@gmail.com'; GIT_COMMITTER_NAME='brian
 gerson'; GIT_COMMITTER_EMAIL='brianpgerson@gmail.com';" HEAD
 
+'.text.html.ruby':
+  'erb cleanliness':
+    'prefix': ' ='
+    'body': '<%= $1 %>'
+    
+'.text.html.ruby':
+  'erb cleanliness2':
+    'prefix': ' -'
+    'body': '<% $1 %>'
